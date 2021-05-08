@@ -100,7 +100,7 @@ header {
 
 
 aside {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 @media (max-width: 725px){
@@ -221,7 +221,7 @@ Sidebar
     .sidebar-left {
         background: #f9f5c6;
         padding: 3em 0 3em;
-        margin-bottom: 2em;
+        margin-bottom: 5em;
     }
     
     .sidebar-img {
@@ -230,12 +230,12 @@ Sidebar
     }
 
     .sidebar-lymf {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     .sidebar-massage {
         background: #f9f5c6;
-        margin-bottom: 4em;
+        margin-bottom: 2em;
         padding: 4em 0 2em;
     }
 }
