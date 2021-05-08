@@ -1,0 +1,316 @@
+/* 
+    font-family: 'Montserrat', sans-serif; 300, 400, 700 900
+*/
+
+/* 
+colors: #6d97d4, #7b6b92 , #6e9a66, #b27b92 , #dec04b
+background header/footer: #f8f8e0
+*/
+
+/* 
+background-sections/articles mobil: #ede195, #f9f5c6
+*/
+
+/* 
+eventuellt media vid 775 istället för 675px
+ */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    /* background: #e5e9da; */
+}
+
+img {
+    max-width: 100%;
+    margin: 2em 0;
+}
+
+/* 
+============
+Typography
+============
+*/
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    margin:0;
+    margin-bottom: .5em;
+    font-size: 16px;
+    font-weight: 900;
+    
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #7b6b92;
+}
+
+.read-more {
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    width: max-content;
+}
+
+.read-more:hover,
+.read-more:focus {
+    color: #6d97d4;
+}
+
+/* 
+============
+Layout
+============
+*/
+
+header {
+    background: #f8f8e0;
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.header-title {
+}
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+aside {
+    margin-bottom: 3em;
+}
+
+@media (max-width: 725px){
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mobile-layout {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 725px) {
+    aside {
+        width: 20%;
+    }
+
+    main {
+        width: 45%;
+    }
+    
+    .container-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .desktop-layout {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* 
+============
+Navigation
+============
+*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav li {
+    margin-left: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #7b6b92;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #6d97d4;
+}
+
+.current-page {
+    color: #7b6b92;
+    border-bottom: 2px solid #7b6b92;
+}
+
+.current-page:hover,
+.current-page:focus {
+    color: #7b6b92;
+}
+
+@media (max-width: 725px ) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 0 0 .75em;
+    }
+}
+
+/* 
+============
+Sidebar
+============
+*/
+
+.sidebar-title {
+    margin-bottom: .5em;
+}
+
+.sidebar-body {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.sidebar-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-img {
+    order: -1;
+}
+
+@media (max-width: 725px) {
+    .sidebar-img {
+        margin-top: 0;
+        width: 50%;
+    }
+
+    .sidebar-lymf {
+        margin-bottom: 4em;
+    }
+
+    .sidebar-massage {
+        background: #f9f5c6;
+        margin-bottom: 4em;
+        padding: 2em 0;
+    }
+}
+
+
+/* 
+==========
+Articles
+==========
+*/
+
+@media (max-width: 725px) {
+    .article-featured {
+        background: #f9f5c6;
+        margin-bottom: 4em;
+    }
+}
+
+
+/* 
+============
+Footer
+============
+*/
+
+footer {
+    background: #f8f8e0;
+    padding: 4em 0;
+    color: black;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row-2 {
+    width: 30%;
+}
+
+.row-1 {
+    width:25%;
+    margin-left: 1em;
+}
+
+.section-body {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    color: black;
+    margin: 0;
+    display: inline;
+}
+
+.footer-image-contact {
+    vertical-align: middle;
+    margin: 1em 0;
+}
+
+.read-more-footer,
+.footer-social-media {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 1em 0;
+    margin-bottom: .5em;
+}
+
+.read-more-footer:hover,
+.read-more-footer:focus,
+.footer-social-media:hover,
+.footer-social-media:focus {
+    color: #7b6b92;
+}
+
+@media (max-width: 725px) {
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .section-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-1,
+    .row-2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-title {
+        margin-top: 1em;
+    }
+
+}
+
