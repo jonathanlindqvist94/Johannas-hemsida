@@ -28,6 +28,8 @@ img {
     margin: 2em 0;
 }
 
+
+
 /* 
 ============
 Typography
@@ -78,7 +80,11 @@ header {
     margin-bottom: 4em;
 }
 
-.header-title {
+@media (max-width: 725px) {
+    header {
+        margin: 0;
+        padding-bottom: 4em;
+    }
 }
 
 .container {
@@ -98,17 +104,23 @@ aside {
 }
 
 @media (max-width: 725px){
+    main {
+        display: flex;
+        order: -1;
+    }
+    
     .container {
         width: 100%;
         margin: 0;
+        padding: 0;
     }
 
     .mobile-layout {
-        padding: 1em;
         display: flex;
         flex-direction: column;
     }
 }
+
 
 @media (min-width: 725px) {
     aside {
@@ -205,6 +217,12 @@ Sidebar
 }
 
 @media (max-width: 725px) {
+    
+    .sidebar-left {
+        background: #f9f5c6;
+        padding: 4em 0 3em;
+    }
+    
     .sidebar-img {
         margin-top: 0;
         width: 50%;
@@ -230,8 +248,19 @@ Articles
 
 @media (max-width: 725px) {
     .article-featured {
-        background: #f9f5c6;
+        /* background: #f9f5c6; */
         margin-bottom: 4em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-img {
+        order: -1;
+        margin: 0;
+    }
+
+    .article-padding {
+        padding: 2em;
     }
 }
 
@@ -244,7 +273,7 @@ Footer
 
 footer {
     background: #f8f8e0;
-    padding: 4em 0;
+    padding: 2em 0 0;
     color: black;
 }
 
@@ -292,9 +321,14 @@ footer {
     color: #7b6b92;
 }
 
+
 @media (max-width: 725px) {
     .container-footer {
         flex-direction: column;
+    }
+
+    .footer-content-holder {
+        padding: 0 2em 2em;
     }
 
     .section-flex {
@@ -304,7 +338,7 @@ footer {
 
     .row-1,
     .row-2 {
-        width: 100%;
+        width: 90%;
         margin: 0;
     }
 
